@@ -3,7 +3,7 @@ import openai
 import discord
 from discord.ext import commands
 
-openai.api_key = os.getenv("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")
+openai.api_key = os.getenv("seckety")
 
 intents = discord.Intents.all()
 intents.message_contents = True
@@ -31,4 +31,4 @@ async def ask(ctx, *, question):
     answer = response.choices[0].text.strip()
     await ctx.send(answer)
 
-client.run(os.getenv("MTA3OTYxMzY5NDk5NDAzNDY4OA.GKm-4Z.h73BuEN7A9T9C19vAgOTC-1fsO-_KJLvemUNH0"))
+client.run(os.getenv("seckey"))
